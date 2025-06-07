@@ -18,4 +18,5 @@ def evaluar_paciente(paciente):
 | Clopidogrel + Omeprazol | Cambiar a pantoprazol       |
 
 ## 🔍 Referencias
-1. [Guías AGA 2025](https://example.com)
+1. [Guías AGA 2025]()
+2. [ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0375090624002076)
