@@ -1,18 +1,21 @@
-# 📊 Análisis Interactivo de IBP
+# 📚 Análisis de IBP - Casos Clínicos
 
-## Uso de la Herramienta
-1. **Navegación por sistemas**: Selecciona cardiovascular, renal, gastrointestinal o neurológico
-2. **Diagramas interactivos**: Haz clic en cada paso para ver explicaciones detalladas
-3. **Buscador de interacciones**: Filtra fármacos por enzima CYP450
-
-## Casos de Estudio
+## 💻 Código de Manejo
 ```python
-# Ejemplo de interacción高危 (clopidogrel + omeprazol)
-if paciente.toma_antiagregantes:
-    evitar_omeprazol()
-    considerar_pantoprazol()
+# Algoritmo para hipomagnesemia inducida por IBP
+def evaluar_paciente(paciente):
+    if paciente.tiempo_IBP > 6_meses and paciente.magnesio < 1.5:
+        print("¡Alerta! Riesgo de arritmia")
+        return "Reposición intravenosa de magnesio"
+    else:
+        return "Monitorizar electrolitos semanalmente"
 ```
 
-## Referencias Clave
-- [Guías AGA 2025 sobre IBP](link)
-- [Estudio ADMA/eNOS (Nature, 2024)](link)
+## 📊 Resultados Esperados
+| Escenario               | Acción Recomendada          |
+|-------------------------|-----------------------------|
+| Mg < 1.2 mg/dL          | Suspender IBP + MgSO4 IV    |
+| Clopidogrel + Omeprazol | Cambiar a pantoprazol       |
+
+## 🔍 Referencias
+1. [Guías AGA 2025](https://example.com)
